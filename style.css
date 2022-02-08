@@ -1,0 +1,976 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  width: 100%;
+}
+
+/*           DESKTOP VIEW                  */
+/*           NAV BAR / BARRA DE NAVEGACION */
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.logo {
+  margin: 10px;
+  margin-left: 95px;
+}
+.logo img {
+  width: 35px;
+}
+
+.navbar-items a {
+  text-decoration: none;
+  padding: 15px;
+  margin-right: 50px;
+  color: #060a24;
+  font-size: 16px;
+  font-family: "ibm plex mono";
+}
+.navbar-items a:hover {
+  text-decoration: line-through;
+  color: #00f3bb;
+}
+
+.nav-menu-movil div {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: #0000ec;
+  cursor: pointer;
+  margin: 0px;
+  font-family: "ibm plex mono";
+  padding-left: 20px;
+}
+.nav-menu-movil a:hover {
+  color: #00f3bb;
+  text-decoration: line-through;
+}
+
+#hamburguesa {
+  display: none;
+}
+
+.menuCelu {
+  transform: translateX(100%);
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.nav-menu-movil a {
+  text-decoration: none;
+  color: white;
+}
+
+.menuCelu {
+  display: none;
+}
+.burguer-menu {
+  display: none;
+}
+.close-menu {
+  display: none;
+}
+.labelBurguer {
+  display: none;
+}
+
+/*                 HEADER              */
+
+.header {
+  margin-left: 200px;
+  margin-top: 100px;
+}
+.titulo {
+  font-size: 64px;
+  font-family: "ibm plex sans";
+}
+.titulo span {
+  color: blue;
+}
+.titulo label {
+  text-decoration: line-through;
+}
+p {
+  font-family: "ibm plex mono";
+}
+
+.boton {
+  background-color: #00f3bb;
+  border: none;
+  color: #060a24;
+  text-align: center;
+  line-height: 24px;
+  cursor: pointer;
+  font-family: "ibm plex mono";
+  margin-top: 50px;
+  text-decoration: none;
+  width: 226px;
+  height: 56px;
+  display: block;
+}
+.boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton:hover {
+  background-image: linear-gradient(225deg, #0000fe 0%, #00f3bb 80%);
+}
+
+/*      EPISODIOS       /      PODCASTS                       */
+
+.fondo-episodios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.fondoAzul {
+  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  clip-path: polygon(100% 0%, 100% 80%, 0% 100%, 0 16%);
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  top: 40px;
+  margin: 0;
+}
+
+.fondo-episodios h2 {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  color: white;
+  font-family: "ibm plex sans";
+  font-size: 2.8rem;
+  width: 100%;
+  padding-left: 11rem;
+  z-index: 2;
+  padding-top: 250px;
+}
+
+.podcasts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  z-index: 2;
+}
+.iframe {
+  padding-right: 36px;
+  margin-bottom: 72px;
+  width: 40%;
+  height: 160px;
+}
+
+/*         SECTION NOSOTROS  /      CELU                   */
+
+.nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-right: 50px;
+  margin: 0;
+  position: relative;
+  z-index: 3;
+}
+.texto-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 400px;
+  height: 500px;
+}
+.texto-nosotros h2 {
+  font-family: "ibm plex sans";
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+.texto-nosotros p {
+  font-family: "ibm plex mono";
+}
+.celu {
+  width: 550px;
+  position: relative;
+  padding-right: 90px;
+}
+
+/*                       INVITADAS                 */
+
+.invitadas {
+  width: 100%;
+}
+
+.invitadas h2 {
+  font-family: "ibm plex sans";
+  margin: 50px;
+  font-size: 3rem;
+  margin-left: 200px;
+}
+.contenedor-fotos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.contenedor-fotos div {
+  width: 33.3%;
+}
+.contenedor-fotos div img {
+  width: 100%;
+}
+
+/*                TEMAS               */
+
+.temas {
+  width: 100%;
+  padding-left: 50px;
+}
+.temas h2 {
+  font-size: 3rem;
+  padding-left: 100px;
+}
+.temas h2,
+h3 {
+  font-family: "ibm plex sans";
+}
+.temas h3 {
+  padding-top: 2rem;
+  font-size: 1.2rem;
+}
+.texto-temas {
+  margin: 50px;
+  font-size: 4rem;
+  padding-left: 3rem;
+}
+.img-temas {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.img-temas div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+}
+.img-temas div img {
+  width: 110px;
+}
+.img-temas h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+/*               NOVEDADES           */
+
+.novedades {
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 40%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.items-novedades {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.items-novedades h2 {
+  font-family: "ibm plex sans";
+  color: white;
+  font-size: 3rem;
+}
+.boton-novedades {
+  background-color: #00f3bb;
+  border: none;
+  color: #060a24;
+  width: 300px;
+  height: 56px;
+  text-align: center;
+  line-height: 24px;
+  cursor: pointer;
+  font-family: "ibm plex mono";
+  margin-top: 50px;
+  text-decoration: none;
+}
+.boton-novedades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boton-novedades:hover {
+  background-image: linear-gradient(225deg, #0000fe 0%, #00f3bb 100%);
+}
+
+/*            FOOTER             */
+
+footer {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+footer p {
+  padding-left: 100px;
+}
+.logos-footer {
+  display: flex;
+  width: 400px;
+  height: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-right: 100px;
+}
+.logos-footer img {
+  width: 15px;
+  height: 15px;
+  transition: width 0.3s, height 0.3s, transform 0.5s;
+}
+.logos-footer img:hover {
+  width: 25px;
+  height: 25px;
+  transform: rotate(40deg);
+}
+
+/*          MEDIA QUERY  /   TABLET      */
+/*          MEDIA QUERY  /   TABLET      */
+/*          MEDIA QUERY  /   TABLET      */
+
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+  .navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .logo {
+    margin: 10px;
+    margin-left: 95px;
+  }
+
+  .logo img {
+    width: 35px;
+  }
+
+  .navbar-items a {
+    text-decoration: none;
+    padding: 15px;
+    margin-right: 50px;
+    color: #060a24;
+    font-size: 16px;
+    font-family: "ibm plex mono";
+  }
+  .navbar-items a:hover {
+    text-decoration: line-through;
+    color: #00f3bb;
+  }
+
+  /*                 HEADER              */
+
+  .header {
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+
+  .titulo {
+    font-size: 64px;
+    font-family: "ibm plex sans";
+  }
+
+  .titulo span {
+    color: blue;
+  }
+
+  .titulo label {
+    text-decoration: line-through;
+  }
+
+  .boton {
+    background-color: #00f3bb;
+    border: none;
+    color: #060a24;
+    width: 226px;
+    height: 56px;
+
+    text-align: center;
+    line-height: 24px;
+    cursor: pointer;
+    font-family: "ibm plex mono";
+    margin-top: 50px;
+  }
+  .boton:hover {
+    background-image: linear-gradient(225deg, #0000fe 0%, #00f3bb 80%);
+  }
+
+  /*      EPISODIOS       /      PODCASTS                       */
+
+  .fondo-episodios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+  .fondoAzul {
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    clip-path: polygon(100% 0%, 100% 80%, 0% 100%, 0 10%);
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    top: 0px;
+    margin: 0;
+  }
+
+  .fondo-episodios h2 {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    color: white;
+    font-family: "ibm plex sans";
+    font-size: 2.8rem;
+    width: 100%;
+    padding-left: 5rem;
+    z-index: 2;
+    padding-top: 150px;
+  }
+
+  .podcasts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    z-index: 2;
+  }
+  .iframe {
+    padding-right: 36px;
+    margin-bottom: 72px;
+    width: 40%;
+    height: 160px;
+  }
+
+  /*         SECTION NOSOTROS  /      CELU                   */
+
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-right: 0px;
+    margin: 0;
+    position: relative;
+    z-index: 3;
+  }
+  .texto-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    padding: 100px;
+    height: 500px;
+  }
+
+  .texto-nosotros h2 {
+    font-family: "ibm plex sans";
+    font-size: 3rem;
+    padding-bottom: 0px;
+  }
+
+  .texto-nosotros p {
+    padding-top: 10px;
+    font-family: "ibm plex mono";
+  }
+  .celu {
+    width: 550px;
+    position: relative;
+    padding-right: 0px;
+    padding-top: 100px;
+  }
+
+  /*                       INVITADAS                 */
+
+  .invitadas {
+    width: 100%;
+  }
+
+  .invitadas h2 {
+    font-family: "ibm plex sans";
+    margin: 50px;
+    font-size: 3rem;
+    margin-left: 100px;
+  }
+  .contenedor-fotos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedor-fotos div {
+    width: 100%;
+  }
+  .contenedor-fotos div img {
+    width: 100%;
+  }
+
+  /*                TEMAS               */
+
+  .temas {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .temas h2 {
+    font-size: 3rem;
+    padding-left: 50px;
+  }
+  .temas h2,
+  h3 {
+    font-family: "ibm plex sans";
+  }
+  .temas h3 {
+    padding-top: 2rem;
+    font-size: 1.2rem;
+  }
+  .texto-temas {
+    margin: 50px;
+    font-size: 4rem;
+    padding-left: 3rem;
+  }
+  .img-temas {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  .img-temas div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+  }
+  .img-temas div img {
+    width: 110px;
+  }
+  .img-temas h3 {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  /*               NOVEDADES           */
+
+  .novedades {
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 15%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .items-novedades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .items-novedades h2 {
+    font-family: "ibm plex sans";
+    color: white;
+    font-size: 3rem;
+  }
+  .boton-novedades {
+    background-color: #00f3bb;
+    border: none;
+    color: #060a24;
+    width: 300px;
+    height: 56px;
+    text-align: center;
+    line-height: 24px;
+    cursor: pointer;
+    font-family: "ibm plex mono";
+    margin-top: 50px;
+  }
+  .boton-novedades:hover {
+    background-image: linear-gradient(225deg, #0000fe 0%, #00f3bb 100%);
+  }
+
+  /*            FOOTER             */
+
+  footer {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+  }
+
+  .logos-footer {
+    display: flex;
+    width: 400px;
+    height: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 100px;
+  }
+  .logos-footer img {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+/*      MEDIA QUERY  MAX 800PX   /   MOBILE                   */
+
+/*      MENU HAMBURGUESA    */
+/*      MENU HAMBURGUESA    */
+/*      MENU HAMBURGUESA    */
+
+@media only screen and (min-width: 100px) and (max-width: 800px) {
+  .navbar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .menuCelu {
+    display: none;
+    overflow: hidden;
+  }
+
+  .nav-menu-movil {
+    margin: 0;
+    width: 100%;
+  }
+  .burguer-menu {
+    width: 30px;
+    display: block;
+    margin-right: 15px;
+  }
+  .close-menu {
+    display: none;
+    width: 30px;
+    margin-right: 15px;
+  }
+
+  #hamburguesa:checked ~ .menuCelu {
+    transform: translateX(0%);
+    height: auto;
+    width: 100%;
+    display: block;
+  }
+
+  #hamburguesa:checked ~ label .burguer-menu {
+    display: none;
+  }
+  #hamburguesa:checked ~ label .close-menu {
+    display: block;
+  }
+
+  .navbar-items {
+    display: none;
+  }
+
+  .logo {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .logo img {
+    width: 35px;
+  }
+  .menuCelu label {
+    width: 35px;
+  }
+  .labelBurguer {
+    display: block;
+  }
+
+  /*                 HEADER              */
+
+  .header {
+    margin: 0;
+    padding: 20px;
+  }
+  .titulo {
+    font-size: 3rem;
+    font-family: "ibm plex sans";
+  }
+  .titulo span {
+    color: blue;
+  }
+  .titulo label {
+    text-decoration: line-through;
+  }
+
+  .boton {
+    background-color: #00f3bb;
+    border: none;
+    color: #060a24;
+    width: 100%;
+    height: 56px;
+    text-align: center;
+    line-height: 24px;
+    cursor: pointer;
+    font-family: "ibm plex mono";
+    margin-top: 50px;
+  }
+
+  /*      EPISODIOS       /      PODCASTS                       */
+
+  .fondo-episodios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+  .fondoAzul {
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    clip-path: polygon(100% 0%, 100% 85%, 0% 90%, 0 5%);
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    margin: 0;
+  }
+
+  .fondo-episodios h2 {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    font-family: "ibm plex sans";
+    font-size: 2.8rem;
+    width: 100%;
+    padding-top: 100px;
+    padding-left: 50px;
+    z-index: 2;
+  }
+  .podcasts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+  }
+  .iframe {
+    margin-bottom: 5px;
+    width: 100%;
+    height: 160px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  /*         SECTION NOSOTROS  /      CELU                   */
+
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-right: 0px;
+    margin: 0;
+    z-index: 3;
+  }
+  .texto-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    padding: 10px;
+    height: 500px;
+  }
+
+  .texto-nosotros h2 {
+    font-family: "ibm plex sans";
+    font-size: 2rem;
+    padding-bottom: 0px;
+  }
+
+  .texto-nosotros p {
+    padding-top: 10px;
+    font-family: "ibm plex mono";
+  }
+  .celu {
+    width: 50%;
+    padding-right: 0px;
+    padding-top: 100px;
+  }
+
+  /*                       INVITADAS                 */
+
+  .invitadas {
+    width: 100%;
+  }
+
+  .invitadas h2 {
+    font-family: "ibm plex sans";
+    margin: 0;
+    width: 60px;
+    font-size: 1.8rem;
+    margin-left: 10px;
+  }
+  .contenedor-fotos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedor-fotos div {
+    width: 100%;
+  }
+  .contenedor-fotos div img {
+    width: 100%;
+  }
+
+  /*                TEMAS               */
+
+  .temas {
+    width: 100%;
+    padding-left: 0px;
+    padding-top: 100px;
+  }
+  .temas h2 {
+    width: 100%;
+    font-size: 1.7rem;
+    padding-left: 10px;
+    margin: 0;
+  }
+
+  .temas h3 {
+    padding-top: 2rem;
+    font-size: 1.2rem;
+  }
+  .texto-temas {
+    margin: 50px;
+    font-size: 4rem;
+    padding-left: 3rem;
+  }
+  .img-temas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .img-temas div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding: 30px;
+  }
+  .img-temas div img {
+    width: 110px;
+  }
+  .img-temas h3 {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  /*               NOVEDADES           */
+
+  .novedades {
+    width: 100%;
+    height: 450px;
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0 10%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .items-novedades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .items-novedades h2 {
+    font-family: "ibm plex sans";
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .boton-novedades {
+    background-color: #00f3bb;
+    border: none;
+    color: #060a24;
+    width: 300px;
+    height: 56px;
+    text-align: center;
+    line-height: 24px;
+    cursor: pointer;
+    font-family: "ibm plex mono";
+    margin-top: 50px;
+  }
+  .boton-novedades:hover {
+    background-image: linear-gradient(225deg, #0000fe 0%, #00f3bb 100%);
+  }
+
+  /*            FOOTER             */
+
+  footer {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer p {
+    padding-top: 10px;
+    padding-left: 0px;
+  }
+  .logos-footer {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 0px;
+    padding: 40px;
+    margin: 0;
+  }
+  .logos-footer img {
+    width: 15px;
+    height: 15px;
+  }
+}
